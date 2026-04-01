@@ -30,15 +30,15 @@ Building extraction from Remote Sensing (RS) imagery is crucial for smart city c
   - Installing necessary packages: `pip install -r requirements.txt`
 
 + Train/Test
-  - `python -m tools.train`
-  - `python -m tools.test`
+  - `python train.py`
+  - `python test.py`
 
 
 ## Introduction
 
 The code will be available.
 
-The dataset can be downloaded at [Baidu netdisk](https://pan.baidu.com/s/1MDS15v0zWMHhTf9mAnZxrw?pwd=0220)(Password:0220) or [Google Drive](https://drive.google.com/file/d/1fT5fI-OQGl62Qz2eADtftifs6je1YR82/view?usp=sharing).
+The dataset can be downloaded at [Baidu netdisk](https://pan.baidu.com/s/1MDS15v0zWMHhTf9mAnZxrw?pwd=0220)(Password:0220) or [Google Drive]().
 
 If you have any questions about this work, you can contact me. 
 
