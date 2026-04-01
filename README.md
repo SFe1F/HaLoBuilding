@@ -10,7 +10,7 @@ This is the official implementation of the paper:<br/>
 <p align="center"> 
 <img src="./fig.png" width=100% 
 class="center">
-<p align="center">  Illustration of data distribution and challenging scenarios in realistic change detection. (a) Comparison of the average change ratio per image between the proposed LSMD and other mainstream benchmarks. (b) Comparison of image proportions across different change ratios (1%--10%) between the proposed LSMD and existing benchmarks. (c) Visual examples of small-scale changes in large-scale scenes. (d) Visual examples of small buildings under vegetation backgrounds.
+<p align="center">  Illustration of the annotation pipeline for the HaLoBuilding dataset based on the Same-Scene Multitemporal Pairing strategy. The process consists of two stages: Stage 1 pairs clear reference images with adverse-weather counterparts. Stage 2 transfers high-quality labels from clear images, followed by rigorous manual refinement. The yellow dashed boxes highlight inconsistent regions caused by temporal gaps or visibility degradation, which are manually corrected to ensure high-fidelity, pixel-level alignment with the actually visible buildings.
 </p> 
 
 ----
@@ -19,7 +19,7 @@ class="center">
   <summary>
   <font size="+1">Abstract</font>
   </summary>
-Change detection in optical remote sensing imagery is susceptible to illumination fluctuations, seasonal changes, and variations in surface land-cover materials. Relying solely on RGB imagery often produces pseudo-changes and leads to semantic ambiguity in features. Incorporating near-infrared (NIR) information provides heterogeneous physical cues that are complementary to visible light, thereby enhancing the discriminability of building materials and tiny structures while improving detection accuracy. However, existing multi-modal datasets generally lack high-resolution and accurately registered bi-temporal imagery, and current methods often fail to fully exploit the inherent heterogeneity between these modalities. To address these issues, we introduce the Large-scale Small-change Multi-modal Dataset (LSMD), a bi-temporal RGB–NIR building change detection benchmark dataset targeting small changes in realistic scenarios, providing a rigorous testing platform for evaluating multi-modal change detection methods in complex environments. Based on LSMD, we further propose the Multi-modal Spectral Complementarity Network (MSCNet) to achieve effective cross-modal feature fusion. MSCNet comprises three key components: the Neighborhood Context Enhancement Module (NCEM) to strengthen local spatial details, the Cross-modal Alignment and Interaction Module (CAIM) to enable deep interaction between RGB and NIR features, and the Saliency-aware Multisource Refinement Module (SMRM) to progressively refine fused features. Extensive experiments demonstrate that MSCNet effectively leverages multi-modal information and consistently outperforms existing methods under multiple input configurations, validating its efficacy for fine-grained building change detection.
+Building extraction from Remote Sensing (RS) imagery is crucial for smart city construction and disaster emergency response. However, existing optical methods and benchmarks focus primarily on ideal clear-weather conditions. Consequently, they exhibit substantial performance degradation in real-world adverse scenarios, where atmospheric scattering and illumination degradation are prevalent. While SAR offers all-weather sensing, its side-looking geometry causes geometric distortions; conversely, optical imagery retains superior geometric fidelity and possesses latent semantic information. However, a dedicated optical benchmark tailored for building extraction under adverse weather is still lacking. To address these challenges, we introduce HaLoBuilding, the first optical benchmark specifically designed for building extraction under hazy and low-light conditions. By leveraging a same-scene multitemporal pairing strategy, we ensure pixel-level label alignment and high fidelity even under extreme degradation. Building upon this benchmark, we propose HaLoBuild-Net, a novel end-to-end framework for building extraction in adverse RS scenarios. At its core, we develop a Spatial-Frequency Filtering Module (SFFM) to effectively disentangle meteorological interference from building structures by coupling large receptive field attention with frequency-domain low-frequency perception. Additionally, a Global Multi-scale Guidance Module (GMGM) provides global semantic constraints to anchor building topologies, while a Mutual-Guided Fusion Module (MGFM) bridges the semantic gap between the encoder and decoder through bidirectional interaction. Extensive experiments demonstrate that HaLoBuild-Net significantly outperforms state-of-the-art methods and conventional cascaded restoration-segmentation paradigms on the HaLoBuilding dataset, while maintaining robust generalization on WHU, INRIA, and LoveDA datasets.
 </details>
 
 
@@ -38,7 +38,7 @@ Change detection in optical remote sensing imagery is susceptible to illuminatio
 
 The code will be available.
 
-The dataset can be downloaded at [Baidu netdisk](https://pan.baidu.com/s/1t-kjJZVoxxX6zSg5SWu57Q?pwd=jddu)(Password: jddu) or [Google Drive](https://drive.google.com/file/d/1fT5fI-OQGl62Qz2eADtftifs6je1YR82/view?usp=sharing).
+The dataset can be downloaded at [Baidu netdisk](https://pan.baidu.com/s/1MDS15v0zWMHhTf9mAnZxrw?pwd=0220)(Password:0220) or [Google Drive](https://drive.google.com/file/d/1fT5fI-OQGl62Qz2eADtftifs6je1YR82/view?usp=sharing).
 
 If you have any questions about this work, you can contact me. 
 
@@ -47,7 +47,7 @@ Email: [luwei_ahu@qq.com](mailto:luwei_ahu@qq.com); WeChat: luwei_ahu.
 Your star is the power that keeps us updating github.
 
 ## Citation
-If MSCNet or the LSMD dataset is useful or relevant to your research, please kindly recognize our contributions by citing our paper::
+If HaLoBuild-Net or the HaLoBuilding dataset is useful or relevant to your research, please kindly recognize our contributions by citing our paper::
 ```
 @article{wang2026multi,
   title={Multi-Modal Building Change Detection for Large-Scale Small Changes: Benchmark and Baseline},
