@@ -32,6 +32,10 @@ Building extraction from Remote Sensing (RS) imagery is crucial for smart city c
 + Train/Test
   - `python train.py`
   - `python test.py`
+  
+## Pre-train Backbone Weights on Imagenet-1k
+
+Imagenet 300-epoch pre-trained LWGANet-L2 backbone: [Download](https://github.com/lwCVer/LWGANet/releases/download/weights/lwganet_l2_e296.pth)
 
 
 ## Introduction
