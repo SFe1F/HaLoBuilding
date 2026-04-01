@@ -38,7 +38,7 @@ Building extraction from Remote Sensing (RS) imagery is crucial for smart city c
 
 The code will be available.
 
-The dataset can be downloaded at [Baidu netdisk](https://pan.baidu.com/s/1MDS15v0zWMHhTf9mAnZxrw?pwd=0220)(Password:0220) or [Google Drive]().
+The dataset can be downloaded at [Baidu netdisk](https://pan.baidu.com/s/1MDS15v0zWMHhTf9mAnZxrw?pwd=0220)(Password:0220) or [Google Drive](https://drive.google.com/drive/folders/1ikmg7jdjC-yGk70mxTspxxMa4HLLmonC?usp=drive_link).
 
 If you have any questions about this work, you can contact me. 
 
@@ -46,16 +46,6 @@ Email: [luwei_ahu@qq.com](mailto:luwei_ahu@qq.com); WeChat: luwei_ahu.
 
 Your star is the power that keeps us updating github.
 
-## Citation
-If HaLoBuild-Net or the HaLoBuilding dataset is useful or relevant to your research, please kindly recognize our contributions by citing our paper::
-```
-@article{wang2026multi,
-  title={Multi-Modal Building Change Detection for Large-Scale Small Changes: Benchmark and Baseline},
-  author={Wang, Ye and Lu, Wei and You, Zhihui and Chen, Keyan and Liu, Tongfei and Li, Kaiyu and Chen, Hongruixuan and Shu, Qingling and Chen, Sibao},
-  journal={arXiv preprint arXiv:2603.19077},
-  year={2026}
-}
-```
 
 ## License
 Licensed under a [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/) for Non-commercial use only.
