@@ -8,7 +8,7 @@ This is the official implementation of the paper:<br/>
 ----
 
 <p align="center"> 
-<img src="./LSMD-main/fig1.png" width=100% 
+<img src="./fig.png" width=100% 
 class="center">
 <p align="center">  Illustration of data distribution and challenging scenarios in realistic change detection. (a) Comparison of the average change ratio per image between the proposed LSMD and other mainstream benchmarks. (b) Comparison of image proportions across different change ratios (1%--10%) between the proposed LSMD and existing benchmarks. (c) Visual examples of small-scale changes in large-scale scenes. (d) Visual examples of small buildings under vegetation backgrounds.
 </p> 
