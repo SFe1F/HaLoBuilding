@@ -25,8 +25,8 @@ Building extraction from Remote Sensing (RS) imagery is crucial for smart city c
 
 ## Installation
 + Prerequisites for Python:
-  - Creating a virtual environment in the terminal: `conda create -n LSMD python=3.8`
-  - Activate the environment: `conda activate LSMD`
+  - Creating a virtual environment in the terminal: `conda create -n HaLoBuild python=3.10`
+  - Activate the environment: `conda activate HaLoBuild`
   - Installing necessary packages: `pip install -r requirements.txt`
 
 + Train/Test
